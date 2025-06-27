@@ -1,4 +1,5 @@
 import Book from '../models/book.model.js';
+import { Op } from 'sequelize';
 
 export const getBooks = async (req, res) => {
   try {
@@ -45,8 +46,13 @@ export const updateBook = async (req, res) => {
     if (!title || !author || !pages || !genre)
       return res.status(400).json({ message: 'Faltan campos obligatorios' });
 
-    const duplicate = await Book.findOne({ where: { title } });
-    if (duplicate && duplicate.id != req.params.id)
+    const duplicate = await Book.findOne({
+      where: {
+        title,
+        id: { [Op.ne]: req.params.id }
+      }
+    });
+    if (duplicate)
       return res.status(400).json({ message: 'Título ya usado' });
 
     await book.update({ title, author, pages, genre, description });
