@@ -1,6 +1,6 @@
 import express from 'express';
 import dotenv from 'dotenv';
-import bookRoutes from './src/routes/bookRoutes.js';
+import bookRoutes from './src/routes/book.routes.js';
 import sequelize from './src/config/database.js';
 
 dotenv.config();
