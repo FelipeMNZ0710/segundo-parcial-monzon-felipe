@@ -1,0 +1,29 @@
+{
+  "name": "segundo-parcial-monzon-felipe",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000s\u0000e\u0000g\u0000u\u0000n\u0000d\u0000o\u0000-\u0000p\u0000a\u0000r\u0000c\u0000i\u0000a\u0000l\u0000-\u0000m\u0000o\u0000n\u0000z\u0000o\u0000n\u0000-\u0000f\u0000e\u0000l\u0000i\u0000p\u0000e\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelipeMNZ0710/segundo-parcial-monzon-felipe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FelipeMNZ0710/segundo-parcial-monzon-felipe/issues"
+  },
+  "homepage": "https://github.com/FelipeMNZ0710/segundo-parcial-monzon-felipe#readme",
+  "dependencies": {
+    "dotenv": "^16.6.0",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.1",
+    "sequelize": "^6.37.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
