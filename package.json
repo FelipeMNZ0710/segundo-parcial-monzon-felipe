@@ -1,9 +1,11 @@
 {
   "name": "segundo-parcial-monzon-felipe",
   "version": "1.0.0",
-  "description": "��#\u0000 \u0000s\u0000e\u0000g\u0000u\u0000n\u0000d\u0000o\u0000-\u0000p\u0000a\u0000r\u0000c\u0000i\u0000a\u0000l\u0000-\u0000m\u0000o\u0000n\u0000z\u0000o\u0000n\u0000-\u0000f\u0000e\u0000l\u0000i\u0000p\u0000e\u0000\r\u0000 \u0000",
-  "main": "index.js",
+  "description": "API REST Segundo Parcial Taller de Lenguajes de Programación I",
+  "main": "app.js",
+  "type": "module",
   "scripts": {
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
