@@ -4,7 +4,7 @@ dotenv.config();
 
 const requiredEnv = ['DB_NAME', 'DB_USER', 'DB_PASSWORD', 'DB_HOST', 'DB_DIALECT'];
 requiredEnv.forEach((key) => {
-  if (!process.env[key]) {
+  if (process.env[key] === undefined) {
     throw new Error(`Missing required environment variable: ${key}`);
   }
 });
